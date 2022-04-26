@@ -33,8 +33,8 @@ const Document = () => {
 
         <link rel="manifest" href="/site.webmanifest" />
 
-        <meta property='csp-nonce' content={nonce} />
-        <meta httpEquiv='Content-Security-Policy' content={csp} />
+        <meta property="csp-nonce" content={nonce} />
+        <meta httpEquiv="Content-Security-Policy" content={csp} />
       </Head>
       <body>
         <Main />

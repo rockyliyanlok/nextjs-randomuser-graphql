@@ -1,13 +1,16 @@
 import { NextApiRequest, NextApiResponse } from 'next'
 import { ApolloServer } from 'apollo-server-micro'
-
 import { ApolloServerPluginLandingPageGraphQLPlayground } from 'apollo-server-core'
+
 import { resolvers } from '@/graphql/resolvers'
 import { typeDefs } from '@/graphql/typeDefs'
 
-const apolloServer = new ApolloServer({ typeDefs, resolvers, introspection: true, plugins: [
-  ApolloServerPluginLandingPageGraphQLPlayground
-] })
+const apolloServer = new ApolloServer({
+  typeDefs,
+  resolvers,
+  introspection: true,
+  plugins: [ApolloServerPluginLandingPageGraphQLPlayground],
+})
 
 const startServer = apolloServer.start()
 
