@@ -1,9 +1,6 @@
 import { gql } from 'apollo-server-micro'
 
-export const typeDefs = gql`
-  type Query {
-    greeting: Greeting
-  }
+export const typeDef = gql`
   type Greeting {
     message: String
   }
