@@ -17,6 +17,10 @@ const securityHeaders = () => [
   },
 ]
 
+const publicRuntimeConfig = {
+  randomuserBaseUrl: 'https://randomuser.me/api/',
+}
+
 const nextConfig = withPWA({
   reactStrictMode: true,
   i18n: {
@@ -38,6 +42,7 @@ const nextConfig = withPWA({
       },
     ]
   },
+  publicRuntimeConfig,
 })
 
 module.exports = nextConfig

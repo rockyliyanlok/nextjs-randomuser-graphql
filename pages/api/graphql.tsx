@@ -1,4 +1,5 @@
 import { NextApiRequest, NextApiResponse } from 'next'
+import _merge from 'lodash/merge'
 import { ApolloServer } from 'apollo-server-micro'
 import { ApolloServerPluginLandingPageGraphQLPlayground } from 'apollo-server-core'
 
