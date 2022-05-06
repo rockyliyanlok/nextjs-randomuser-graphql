@@ -3,8 +3,8 @@ import _merge from 'lodash/merge'
 import { ApolloServer } from 'apollo-server-micro'
 import { ApolloServerPluginLandingPageGraphQLPlayground } from 'apollo-server-core'
 
-import { typeDefs } from '@/graphql/typeDefs'
 import { resolvers } from '@/graphql/resolvers'
+import { typeDefs } from '@/graphql/typeDefs'
 
 const apolloServer = new ApolloServer({
   typeDefs,
