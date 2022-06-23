@@ -7,7 +7,7 @@ const isProd = () => process.env.NODE_ENV === 'production'
 const ContentSecurityPolicy = `
   default-src 'self';
   script-src 'self' 'unsafe-inline'${!isProd() ? ' \'unsafe-eval\'' : ''} unpkg.com/@graphql-yoga/;
-  connect-src 'self' vitals.vercel-insights.com;
+  connect-src 'self' vitals.vercel-insights.com unpkg.com/@graphql-yoga/;
   style-src 'self' 'unsafe-inline' unpkg.com/@graphql-yoga/;
   font-src 'self';
   img-src 'self' www.graphql-yoga.com;
