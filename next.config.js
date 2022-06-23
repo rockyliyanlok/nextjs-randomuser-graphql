@@ -7,7 +7,7 @@ const isProd = () => process.env.NODE_ENV === 'production'
 const ContentSecurityPolicy = `
   default-src 'self' apollo-server-landing-page.cdn.apollographql.com;
   script-src 'self' 'unsafe-inline'${!isProd() ? ' \'unsafe-eval\'' : ''} apollo-server-landing-page.cdn.apollographql.com cdn.jsdelivr.net;
-  connect-src 'self' vitals.vercel-insights.com;
+  connect-src 'self' vitals.vercel-insights.com fonts.googleapis.com;
   style-src 'self' 'unsafe-inline' fonts.googleapis.com cdn.jsdelivr.net;
   font-src 'self' fonts.gstatic.com;
   img-src 'self' apollo-server-landing-page.cdn.apollographql.com cdn.jsdelivr.net;
