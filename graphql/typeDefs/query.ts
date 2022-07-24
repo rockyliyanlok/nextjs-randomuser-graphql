@@ -1,6 +1,4 @@
-import { gql } from 'apollo-server-micro'
-
-export const typeDef = gql`
+export const typeDef = /* GraphQL */ `
   type Query {
     greeting: Greeting
     users(
