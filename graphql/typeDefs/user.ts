@@ -31,13 +31,18 @@ export const typeDef = /* GraphQL */ `
   }
 
   type UserLocation {
-    street: String
+    street: UserLocationStreet
     city: String
     state: String
     postcode: String
     coordinates: UserLocationCoordinates
     timezone: UserLocationTimezone
   }
+
+type UserLocationStreet {
+  number: String
+  name: String
+}
 
   type UserLocationCoordinates {
     latitude: Float
